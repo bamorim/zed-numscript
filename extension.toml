@@ -1,0 +1,15 @@
+id = "zed-numscript"
+name = "zed-numscript"
+description = "Support for Numscript"
+version = "0.0.1"
+schema_version = 1
+authors = ["Bernardo Amorim"]
+repository = "https://github.com/bamorim/zed-numscript"
+
+
+[grammars.numscript]
+repository = "https://github.com/bamorim/tree-sitter-numscript"
+commit =  "3e6b94b241e2bdc17b5f3052fff69e4d345bc2a8"
+
+
+
