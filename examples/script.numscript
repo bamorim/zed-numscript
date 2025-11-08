@@ -1,0 +1,32 @@
+// Example Numscript program
+vars {
+  account $source
+  account $dest
+  monetary $amount = [USD 100]
+  string $subacc
+}
+
+send [USD 100] (
+  source = @world
+  destination = @bank:users:001
+)
+
+save [USD 50] from @fees
+
+send $amount (
+  source = {
+    50% from @account1
+    remaining from @account2
+  }
+  destination = {
+    max [USD 30] to @dest1
+    remaining kept
+  }
+)
+
+/* Multi-line comment
+   testing overdraft */
+send [COIN *] (
+  source = @treasury allowing unbounded overdraft
+  destination = @users:alice:$subacc
+)
