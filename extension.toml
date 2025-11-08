@@ -3,7 +3,7 @@ name = "zed-numscript"
 description = "Support for Numscript"
 version = "0.0.1"
 schema_version = 1
-authors = ["Bernardo Amorim"]
+authors = ["Bernardo Amorim <contato@bamorim.com>"]
 repository = "https://github.com/bamorim/zed-numscript"
 
 [grammars.numscript]
