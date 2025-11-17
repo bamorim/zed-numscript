@@ -1,5 +1,5 @@
-id = "zed-numscript"
-name = "zed-numscript"
+id = "numscript"
+name = "Numscript"
 description = "Support for Numscript"
 version = "0.0.1"
 schema_version = 1
